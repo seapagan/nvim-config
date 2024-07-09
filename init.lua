@@ -1,9 +1,9 @@
-require("lua.core.options")
-require("lua.core.lazy")
+require("core.options")
+require("core.lazy")
 require("lazy").setup("plugins", {
     change_detection = {
       enabled = true,
       notify = false,
     },
 })
-require("lua.core.keymaps")
+require("core.keymaps")
