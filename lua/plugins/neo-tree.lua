@@ -11,5 +11,5 @@ return {
     vim.keymap.set('n', '<leader>ee', ":Neotree filesystem reveal toggle left<CR>", {})
     vim.keymap.set('n', '<leader>ef', ":Neotree filesystem focus left<CR>", {})
   end
-}  
+}
 
