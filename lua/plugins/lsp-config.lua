@@ -24,6 +24,7 @@ return {
     },
     config = function()
       local lspconfig = require("lspconfig")
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       require('mason-tool-installer').setup({
         ensure_installed = {
@@ -35,6 +36,7 @@ return {
 
       -- set up lua-ls
       lspconfig.lua_ls.setup({
+        capabilities = capabilities,
         settings = {
           Lua = {
             diagnostics = {
@@ -45,7 +47,9 @@ return {
         },
       })
       -- setup javascript, typescript etc
-      lspconfig.tsserver.setup({})
+      lspconfig.tsserver.setup({
+        capabilities = capabilities
+      })
 
       -- add some keymaps to use lsp functionality
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
