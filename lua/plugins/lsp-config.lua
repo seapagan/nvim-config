@@ -19,8 +19,20 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      'WhoIsSethDaniel/mason-tool-installer.nvim'
+    },
     config = function()
       local lspconfig = require("lspconfig")
+
+      require('mason-tool-installer').setup({
+        ensure_installed = {
+          'stylua',
+          'rubocop',
+          'prettier',
+        }
+      })
+
       -- set up lua-ls
       lspconfig.lua_ls.setup({
         settings = {
