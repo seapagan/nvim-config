@@ -6,7 +6,7 @@ This is a list of plugins that I plan to install in this `nvim` configuration.
 At this moment it is both non-exhaustive and non-definitive. I may not end up
 using all of these plugins as the build progresses and is used/tested.
 
-Plugin control will be managed by [lazy.vim](https://github.com/folke/lazy.nvim).
+Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 
 - [x] [barbecue.nvim](https://github.com/utilyre/barbecue.nvim) - A VS Code like winbar for Neovim
 - [x] [bigfile.nvim](https://github.com/LunarVim/bigfile.nvim) - Make editing big files faster 🚀
@@ -19,14 +19,14 @@ Plugin control will be managed by [lazy.vim](https://github.com/folke/lazy.nvim)
 - [x] [vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc) - Generate table of contents for Markdown files
 - [x] [nvim-autopairs](https://github.com/windwp/nvim-autopairs) - Auto-completion of bracket/paren/quote pairs
 - [x] [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
-- [ ] [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) - A UI for nvim-dap
+- [x] [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) - A UI for nvim-dap
 - [ ] [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python) - Debugging support for Python
 - [ ] [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) - Virtual text for nvim-dap
 - [x] [nvim-emmet](https://github.com/olrtg/nvim-emmet) - Emmet for Neovim
 - [ ] [nvim-lint](https://github.com/mfussenegger/nvim-lint) - Linting support for Neovim
 - [x] [nvim-live-server](barrett-ruth/live-server.nvim) - Live reload local development servers
 - [x] [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configurations for the Nvim LSP client
-- [ ] [nvim-nvim-nio](nvim-neotest/nvim-nio) - A library for asynchronous IO in Neovim
+- [x] [nvim-nvim-nio](nvim-neotest/nvim-nio) - A library for asynchronous IO in Neovim
 - [ ] [nvim-surround](https://github.com/kylechui/nvim-surround) - Add/change/delete surrounding delimiter pairs with ease
 - [x] [toggleterm.nvim](akinsho/nvim-toggleterm.lua) - A neovim lua plugin to help easily manage multiple terminal windows
 - [ ] [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - A file explorer tree for Neovim written in Lua
@@ -45,3 +45,7 @@ Plugin control will be managed by [lazy.vim](https://github.com/folke/lazy.nvim)
 **Either of these for Rust**:
 - [ ] [rustaceanvim](https://github.com/mrcjkb/rustaceanvim) - A heavily modified fork of `rust-tools.nvim`
 - [ ] [coc-rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) - Rust analyzer extension for coc.nvim
+
+## Potential Plugins
+
+- [ ] [mini.nvim](https://github.com/echasnovski/mini.nvim) - some potentially useful functions
