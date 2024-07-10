@@ -5,8 +5,8 @@ return {
     "nvim-neotest/nvim-nio",
   },
   config = function()
-    local dap = require("dap")
-    local dapui = require("dapui")
+    local dap = require "dap"
+    local dapui = require "dapui"
 
     -- setup dap-ui and other debuggers here
     require("dapui").setup()
@@ -27,8 +27,8 @@ return {
 
     -- finally some useful keymaps
     vim.keymap.set("n", "<Leader>dt", ":DapToggleBreakpoint<CR>")
-		vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")
-		vim.keymap.set("n", "<Leader>dx", ":DapTerminate<CR>")
-		vim.keymap.set("n", "<Leader>do", ":DapStepOver<CR>")
+    vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")
+    vim.keymap.set("n", "<Leader>dx", ":DapTerminate<CR>")
+    vim.keymap.set("n", "<Leader>do", ":DapStepOver<CR>")
   end,
 }

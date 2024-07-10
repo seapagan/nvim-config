@@ -1,6 +1,6 @@
 return {
-	"wintermute-cell/gitignore.nvim",
-	config = function()
-		require("gitignore")
-	end,
+  "wintermute-cell/gitignore.nvim",
+  config = function()
+    require "gitignore"
+  end,
 }
