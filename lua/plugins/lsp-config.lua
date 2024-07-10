@@ -13,6 +13,7 @@ return {
           "lua_ls",
           "tsserver",
           "emmet_language_server",
+          "pyright",
         },
       }
     end,
@@ -31,9 +32,39 @@ return {
           "stylua",
           "rubocop",
           "prettier",
+          "ruff",
+          "mypy",
         },
       }
 
+      -- set up ruff for Python
+      local on_attach = function(client, _)
+        if client.name == "ruff" then
+          -- Disable hover in favor of Pyright
+          client.server_capabilities.hoverProvider = false
+        end
+      end
+
+      lspconfig.ruff.setup {
+        capabilities = capabilities,
+        on_attach = on_attach,
+      }
+
+      -- setup pyright for Python
+      require("lspconfig").pyright.setup {
+        settings = {
+          pyright = {
+            -- Using Ruff's import organizer
+            disableOrganizeImports = true,
+          },
+          python = {
+            analysis = {
+              -- Ignore all files for analysis to exclusively use Ruff for linting
+              ignore = { "*" },
+            },
+          },
+        },
+      }
       -- set up lua-ls
       lspconfig.lua_ls.setup {
         capabilities = capabilities,
