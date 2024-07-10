@@ -1,6 +1,9 @@
 -- global options for our neovim config
 local opt = vim.opt
 
+-- terminal colors
+opt.termguicolors = true
+
 -- line numbering
 opt.number = true
 opt.relativenumber = true
