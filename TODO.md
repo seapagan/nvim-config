@@ -35,12 +35,12 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 - [x] [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Find, Filter, Preview, Pick. All in Lua
 - [ ] [vim-commentary](https://github.com/tpope/vim-commentary) - Comment stuff out
 - [ ] [vim-maximizer](https://github.com/szw/vim-maximizer) - Maximize/restore windows in Vim
-- [ ] [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - Multiple cursors plugin for vim/NeoVim
+- [x] [vim-visual-multi](https://github.com/mg979/vim-visual-multi) - Multiple cursors plugin for vim/NeoVim
 - [x] [lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) - Plugin for calling lazygit from within Neovim
-- [ ] [which-key.nvim](folke/which-key.nvim) - A Vim plugin that shows keybindings in popup
+- [x] [which-key.nvim](folke/which-key.nvim) - A Vim plugin that shows keybindings in popup
 - [ ] [trim.nvim](https://github.com/cappyzawa/trim.nvim) - A Neovim plugin to trim whitespace
 - [x] [trouble.nvim](https://github.com/folke/trouble.nvim) - Pretty diagnostics, references, telescope, quickfix in a floating window
-- [ ] [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
+- [x] [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
 
 **Either of these for Rust**:
 - [ ] [rustaceanvim](https://github.com/mrcjkb/rustaceanvim) - A heavily modified fork of `rust-tools.nvim`
@@ -49,3 +49,4 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 ## Potential Plugins
 
 - [ ] [mini.nvim](https://github.com/echasnovski/mini.nvim) - some potentially useful functions
+- [ ] [octo.nvim](https://github.com/pwntester/octo.nvim) - GitHub PRs and issues in Neovim

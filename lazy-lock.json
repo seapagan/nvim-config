@@ -11,6 +11,7 @@
   "copilot.vim": { "branch": "release", "commit": "0668308e68b0ac28b332b204b469fbe04601536a" },
   "friendly-snippets": { "branch": "main", "commit": "45a1b96e46efe5fce8af325d4bed45feb9d29d0f" },
   "gitignore.nvim": { "branch": "master", "commit": "2455191ec94da8ed222806a4fe3aa358eac1e558" },
+  "gitsigns.nvim": { "branch": "main", "commit": "375c44bdfdde25585466a966f00c2e291db74f2d" },
   "indent-blankline.nvim": { "branch": "master", "commit": "65e20ab94a26d0e14acac5049b8641336819dfc7" },
   "lazy.nvim": { "branch": "main", "commit": "d1de92dffab5a862332fdd1892889d362369c12f" },
   "lazygit.nvim": { "branch": "main", "commit": "dc56df433bfbf107fee0139e187eb9750878fa84" },
@@ -46,5 +47,6 @@
   "trouble.nvim": { "branch": "main", "commit": "4453fea6bb597830fbd58d2c484612f37b97bd8c" },
   "vim-markdown-toc": { "branch": "master", "commit": "9b6ff787fdd50299e18c8b5bf1b5dc319fdbf435" },
   "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
+  "vim-visual-multi": { "branch": "master", "commit": "38b0e8d94a5499ccc17d6159763d32c79f53417b" },
   "which-key.nvim": { "branch": "main", "commit": "af4ded85542d40e190014c732fa051bdbf88be3d" }
 }
