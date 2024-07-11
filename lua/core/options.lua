@@ -30,6 +30,8 @@ vim.api.nvim_command([[autocmd FileType python set tabstop=4]])
 vim.api.nvim_command([[autocmd FileType python set shiftwidth=4]])
 vim.api.nvim_command([[autocmd FileType python set expandtab]])
 
+vim.g.lazygit_floating_window_winblend = 12
+
 -- Misc appearance settings
 opt.signcolumn = "yes"
 vim.diagnostic.config {
