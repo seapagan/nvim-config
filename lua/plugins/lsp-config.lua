@@ -14,6 +14,7 @@ return {
           "tsserver",
           "emmet_language_server",
           "pyright",
+          "eslint",
         },
       }
     end,
@@ -79,6 +80,11 @@ return {
       }
       -- setup javascript, typescript etc
       lspconfig.tsserver.setup {
+        capabilities = capabilities,
+      }
+
+      -- setup eslint
+      require("lspconfig")["eslint"].setup {
         capabilities = capabilities,
       }
 
