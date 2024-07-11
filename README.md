@@ -14,6 +14,10 @@ configure it.
         * [Missing Perl support](#missing-perl-support)
         * [Missing Python package](#missing-python-package)
 * [Installation](#installation)
+* [Language Support](#language-support)
+    * [Python](#python)
+    * [Lua](#lua)
+    * [JavaScript/TypeScript](#javascripttypescript)
 * [Included Plugins](#included-plugins)
 * [Planned Plugins / Functionality](#planned-plugins--functionality)
 
@@ -66,10 +70,7 @@ the `pynvim`package anyway (it's a transition package).
 
 ## Installation
 
-> [!NOTE]
-> This section is a work in progress.
-
-Generally, you can clone this repository into your Neovim configuiration folder.
+Generally, you can clone this repository into your Neovim configuration folder.
 On Linux/Mac this is usually `~/.config/nvim`. Check the Neovim documentation
 for your specific system if you are unsure.
 
@@ -79,7 +80,35 @@ git clone https://github.com/seapagan/nvim-config.git ~/.config/nvim
 
 > [!WARNING]
 > Be aware this will overwrite any existing configuration you have in
-> `~/.config/nvim`!
+> `~/.config/nvim`! You may want to back it up first.
+
+## Language Support
+
+I intend to add several language support plugins to this configuration. 
+
+> [!NOTE]
+> While the basic debugging support exists, it has not been set up for any 
+> languages yet.
+
+At the moment there is support for: 
+
+### Python
+
+Python LSPs are setup using `pyright` for the main LSP and `ruff` for linting
+and formatting. Mypy is also used for type checking. I still have a bit to 
+tweak on this, for example formatting on save, but it is mostly working.
+
+### Lua
+
+Lua support is pretty solid out of the box with Neovim. I have added an LSP 
+and formatting. It's pretty good for Lua development.
+
+### JavaScript/TypeScript
+
+There is some LSP support for JavaScript and TypeScript. I am using `tsserver` 
+as the main LSP, and `prettierd` is installed for formatting. 
+When I get back to some web development I will be adding more support for this.
+
 
 ## Included Plugins
 

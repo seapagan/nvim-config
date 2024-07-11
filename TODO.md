@@ -1,6 +1,4 @@
-
 # Planned Plugins
-
 
 This is a list of plugins that I plan to install in this `nvim` configuration.
 At this moment it is both non-exhaustive and non-definitive. I may not end up
@@ -23,13 +21,12 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 - [ ] [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python) - Debugging support for Python
 - [ ] [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) - Virtual text for nvim-dap
 - [x] [nvim-emmet](https://github.com/olrtg/nvim-emmet) - Emmet for Neovim
-- [ ] [nvim-lint](https://github.com/mfussenegger/nvim-lint) - Linting support for Neovim
 - [x] [nvim-live-server](barrett-ruth/live-server.nvim) - Live reload local development servers
 - [x] [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configurations for the Nvim LSP client
 - [x] [nvim-nvim-nio](nvim-neotest/nvim-nio) - A library for asynchronous IO in Neovim
 - [ ] [nvim-surround](https://github.com/kylechui/nvim-surround) - Add/change/delete surrounding delimiter pairs with ease
 - [x] [toggleterm.nvim](akinsho/nvim-toggleterm.lua) - A neovim lua plugin to help easily manage multiple terminal windows
-- [ ] [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua) - A file explorer tree for Neovim written in Lua
+- [x] [neo-tree.nvm](https://github.com/nvim-neo-tree/neo-tree.nvim) - A file explorer tree for Neovim written in Lua
 - [x] [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configurations and abstraction layer
 - [x] [quickfixdd](https://github.com/TamaMcGlinn/quickfixdd) - plugin to allow dd inside quickfix buffer
 - [x] [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Find, Filter, Preview, Pick. All in Lua
@@ -41,12 +38,15 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 - [ ] [trim.nvim](https://github.com/cappyzawa/trim.nvim) - A Neovim plugin to trim whitespace
 - [x] [trouble.nvim](https://github.com/folke/trouble.nvim) - Pretty diagnostics, references, telescope, quickfix in a floating window
 - [x] [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) - Git integration for buffers
-
-**Either of these for Rust**:
 - [ ] [rustaceanvim](https://github.com/mrcjkb/rustaceanvim) - A heavily modified fork of `rust-tools.nvim`
-- [ ] [coc-rust-analyzer](https://github.com/fannheyward/coc-rust-analyzer) - Rust analyzer extension for coc.nvim
 
 ## Potential Plugins
 
+These plugins will probably end up in the final configuration tbh.
+
 - [ ] [mini.nvim](https://github.com/echasnovski/mini.nvim) - some potentially useful functions
 - [ ] [octo.nvim](https://github.com/pwntester/octo.nvim) - GitHub PRs and issues in Neovim
+- [ ] [barbar.nvim](https://github.com/romgrk/barbar.nvim) - alternative to `bufferline.nvim`
+- [ ] [nvim-lightbulb](https://github.com/kosayoda/nvim-lightbulb) - Show a lightbulb in the sign column when a code action is available
+- [ ] [outline.nvim](https://github.com/onsails/lspkind.nvim) - A tree-sitter based code outline
+- [ ] [lspkind](https://github.com/onsails/lspkind.nvim) - vscode-like pictograms for neovim lsp completion items
