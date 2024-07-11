@@ -38,14 +38,22 @@ return {
         },
       }
 
-      -- set up ruff for Python
+      -- set up an `on_attach` function.
+      -- this will:
+      --  1) Disable hover for `ruff`
+      --  2) Enable file watching for all LSPs
       local on_attach = function(client, _)
         if client.name == "ruff" then
           -- Disable hover in favor of Pyright
           client.server_capabilities.hoverProvider = false
         end
+        -- Enable file watching for the LSP
+        if client.config.capabilities.workspace.didChangeWatchedFiles then
+          client.notify("workspace/didChangeWatchedFiles", {})
+        end
       end
 
+      -- setup ruff for Python linting and formatting
       lspconfig.ruff.setup {
         capabilities = capabilities,
         on_attach = on_attach,
@@ -53,6 +61,7 @@ return {
 
       -- setup pyright for Python
       require("lspconfig").pyright.setup {
+        on_attach = on_attach,
         settings = {
           pyright = {
             -- Using Ruff's import organizer
@@ -68,6 +77,7 @@ return {
       }
       -- set up lua-ls
       lspconfig.lua_ls.setup {
+        on_attach = on_attach,
         capabilities = capabilities,
         settings = {
           Lua = {
@@ -80,11 +90,13 @@ return {
       }
       -- setup javascript, typescript etc
       lspconfig.tsserver.setup {
+        on_attach = on_attach,
         capabilities = capabilities,
       }
 
       -- setup eslint
       require("lspconfig")["eslint"].setup {
+        on_attach = on_attach,
         capabilities = capabilities,
       }
 
