@@ -31,7 +31,7 @@ return {
         ensure_installed = {
           "stylua",
           "rubocop",
-          "prettier",
+          "prettierd",
           "ruff",
           "mypy",
         },
