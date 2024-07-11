@@ -9,6 +9,7 @@
   "cmp-nvim-lsp": { "branch": "main", "commit": "39e2eda76828d88b773cc27a3f61d2ad782c922d" },
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
   "copilot.vim": { "branch": "release", "commit": "25f73977033c597d530c7ab0e211d99b60927d2d" },
+  "f-string-toggle.nvim": { "branch": "main", "commit": "4e2ad79dfc5122dd65515ebbdd671e8ee01d157e" },
   "friendly-snippets": { "branch": "main", "commit": "45a1b96e46efe5fce8af325d4bed45feb9d29d0f" },
   "gitignore.nvim": { "branch": "master", "commit": "2455191ec94da8ed222806a4fe3aa358eac1e558" },
   "gitsigns.nvim": { "branch": "main", "commit": "7178d1a430dcfff8a4c92d78b9e39e0297a779c0" },
