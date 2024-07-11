@@ -50,3 +50,7 @@ These plugins will probably end up in the final configuration tbh.
 - [ ] [nvim-lightbulb](https://github.com/kosayoda/nvim-lightbulb) - Show a lightbulb in the sign column when a code action is available
 - [ ] [outline.nvim](https://github.com/onsails/lspkind.nvim) - A tree-sitter based code outline
 - [ ] [lspkind](https://github.com/onsails/lspkind.nvim) - vscode-like pictograms for neovim lsp completion items
+- [ ] [ldelossa/gh.nvim](https://github.com/ldelossa/gh.nvim) - GitHub client for neovim
+- [ ] [nvim-scrollbar](https://github.com/ldelossa/gh.nvim) - A scrollbar with gitsigns
+- [ ] [todo-comments.nvim](https://github.com/folke/todo-comments.nvim) - Highlight, list and search todo comments in your projects
+- [ ] [vim-rooter](https://github.com/airblade/vim-rooter) - Changes Vim working directory to project root
