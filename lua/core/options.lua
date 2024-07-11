@@ -1,6 +1,10 @@
 -- global options for our neovim config
 local opt = vim.opt
 
+-- session management
+opt.sessionoptions =
+"blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
 -- terminal colors
 opt.termguicolors = true
 
@@ -26,9 +30,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Different Tabs etc for Python
-vim.api.nvim_command([[autocmd FileType python set tabstop=4]])
-vim.api.nvim_command([[autocmd FileType python set shiftwidth=4]])
-vim.api.nvim_command([[autocmd FileType python set expandtab]])
+vim.api.nvim_command [[autocmd FileType python set tabstop=4]]
+vim.api.nvim_command [[autocmd FileType python set shiftwidth=4]]
+vim.api.nvim_command [[autocmd FileType python set expandtab]]
 
 vim.g.lazygit_floating_window_winblend = 12
 
@@ -38,13 +42,13 @@ vim.diagnostic.config {
   float = { border = "rounded" }, -- add border to diagnostic popups
 }
 
-vim.diagnostic.config({
-    signs = {
-        text = {
-            [vim.diagnostic.severity.ERROR] = ' ',
-            [vim.diagnostic.severity.WARN] = ' ',
-            [vim.diagnostic.severity.INFO] = ' ',
-            [vim.diagnostic.severity.HINT] = '󰌵 ',
-        }
-    }
-})
+vim.diagnostic.config {
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = " ",
+      [vim.diagnostic.severity.WARN] = " ",
+      [vim.diagnostic.severity.INFO] = " ",
+      [vim.diagnostic.severity.HINT] = "󰌵 ",
+    },
+  },
+}
