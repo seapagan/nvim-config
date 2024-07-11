@@ -7,20 +7,8 @@ return {
       sources = {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.rubocop,
-        null_ls.builtins.formatting.prettier.with {
-          filetypes = {
-            "html",
-            "json",
-            "yaml",
-            "markdown",
-            "css",
-            "scss",
-            "javascript",
-            "typescript",
-            "javascriptreact",
-            "typescriptreact",
-          },
-        },
+        null_ls.builtins.formatting.prettierd,
+
         null_ls.builtins.diagnostics.rubocop,
         null_ls.builtins.diagnostics.mypy,
       },
