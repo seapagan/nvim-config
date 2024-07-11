@@ -56,3 +56,5 @@ These plugins will probably end up in the final configuration tbh.
 - [ ] [nvim-scrollbar](https://github.com/ldelossa/gh.nvim) - A scrollbar with gitsigns
 - [ ] [todo-comments.nvim](https://github.com/folke/todo-comments.nvim) - Highlight, list and search todo comments in your projects
 - [ ] [vim-rooter](https://github.com/airblade/vim-rooter) - Changes Vim working directory to project root
+- [ ] [vim-dadbod](https://github.com/tpope/vim-dadbod) - A database interface for Vim
+- [ ] [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui) - A simple UI for vim-dadbod
