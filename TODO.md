@@ -4,6 +4,8 @@ This is a list of plugins that I plan to install in this `nvim` configuration.
 At this moment it is both non-exhaustive and non-definitive. I may not end up
 using all of these plugins as the build progresses and is used/tested.
 
+I'll also look through [awesome-neovim](https://github.com/rockerBOO/awesome-neovim) for more ideas.
+
 Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 
 - [x] [barbecue.nvim](https://github.com/utilyre/barbecue.nvim) - A VS Code like winbar for Neovim
