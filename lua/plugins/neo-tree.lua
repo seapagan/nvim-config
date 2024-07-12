@@ -7,7 +7,7 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function()
-    require('neo-tree').setup({
+    require("neo-tree").setup {
       close_if_last_window = false,
       open_files_do_not_replace_types = { "terminal", "trouble", "qf" },
       filesystem = {
@@ -16,7 +16,15 @@ return {
           hide_dotfiles = false,
           hide_gitignored = true,
           hide_by_name = {
-            '.git',
+            ".git",
+          },
+          never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
+            ".DS_Store",
+            "thumbs.db",
+            ".mypy_cache",
+            ".pytest_cache",
+            "__pycache__",
+            ".ruff_cache",
           },
         },
       },
@@ -28,27 +36,27 @@ return {
       git_status = {
         symbols = {
           -- Change type
-          added     = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
-          modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
-          deleted   = "✖",-- this can only be used in the git_status source
-          renamed   = "󰁕",-- this can only be used in the git_status source
+          added = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
+          modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
+          deleted = "✖", -- this can only be used in the git_status source
+          renamed = "󰁕", -- this can only be used in the git_status source
           -- Status type
           untracked = "",
-          ignored   = "",
-          unstaged  = "󰄱",
-          staged    = "",
-          conflict  = "",
-        }
+          ignored = "",
+          unstaged = "󰄱",
+          staged = "",
+          conflict = "",
+        },
       },
       hijack_netrw_behavior = "open_default",
-      never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
-        ".DS_Store",
-        "thumbs.db"
-      },
-    })
+    }
     -- Neotree keymaps
-    vim.keymap.set('n', '<leader>ee', ":Neotree filesystem reveal toggle left<CR>", {})
-    vim.keymap.set('n', '<leader>ef', ":Neotree filesystem focus left<CR>", {})
-  end
+    vim.keymap.set(
+      "n",
+      "<leader>ee",
+      ":Neotree filesystem reveal toggle left<CR>",
+      {}
+    )
+    vim.keymap.set("n", "<leader>ef", ":Neotree filesystem focus left<CR>", {})
+  end,
 }
-
