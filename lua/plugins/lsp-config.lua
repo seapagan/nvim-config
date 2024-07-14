@@ -48,9 +48,9 @@ return {
           client.server_capabilities.hoverProvider = false
         end
         -- Enable file watching for the LSP
-        if client.config.capabilities.workspace.didChangeWatchedFiles then
-          client.notify("workspace/didChangeWatchedFiles", {})
-        end
+        -- if client.config.capabilities.workspace.didChangeWatchedFiles then
+        --   client.notify("workspace/didChangeWatchedFiles", {})
+        -- end
       end
 
       -- setup ruff for Python linting and formatting
