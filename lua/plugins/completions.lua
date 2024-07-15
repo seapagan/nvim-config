@@ -11,6 +11,11 @@ return {
     },
     build = "make install_jsregexp",
   },
+  { "petertriho/cmp-git",
+    config = function ()
+      require("cmp_git").setup()
+    end
+  },
   {
     "hrsh7th/nvim-cmp",
     config = function()
@@ -43,6 +48,7 @@ return {
           { name = "mkdnflow" },
           { name = "path" },
           { name = "crates" },
+            {name = "git"},
         }),
       }
     end,
