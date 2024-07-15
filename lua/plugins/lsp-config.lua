@@ -15,6 +15,7 @@ return {
           "emmet_language_server",
           "pyright",
           "eslint",
+          "rust_analyzer",
         },
       }
     end,
@@ -75,6 +76,24 @@ return {
           },
         },
       }
+
+      -- setup rust-analyzer for rust
+      lspconfig.rust_analyzer.setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        filetypes = { "rust" },
+        settings = {
+          ["rust-analyzer"] = {
+            cargo = {
+              allFeatures = true,
+            },
+            checkOnSave = {
+              command = "clippy",
+            },
+          },
+        }
+      }
+
       -- set up lua-ls
       lspconfig.lua_ls.setup {
         on_attach = on_attach,
