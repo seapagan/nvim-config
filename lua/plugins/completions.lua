@@ -42,6 +42,7 @@ return {
           { name = "buffer" },
           { name = "mkdnflow" },
           { name = "path" },
+          { name = "crates" },
         }),
       }
     end,
