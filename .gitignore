@@ -23,3 +23,6 @@ tags
 # Persistent undo
 [._]*.un~
 
+# dont save custom options
+lua/core/custom-options.lua
+lazy-lock.json
