@@ -12,7 +12,7 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 - [x] [bigfile.nvim](https://github.com/LunarVim/bigfile.nvim) - Make editing big files faster 🚀
 - [x] [copilot-nvim](https://github.com/github/copilot.vim) - GitHub Copilot integration for Neovim
 - [ ] [git-blame.nvim](https://github.com/f-person/git-blame.nvim) - A git blame plugin for Neovim written in Lua
-- [ ] [harpoon2](https://github.com/ThePrimeagen/harpoon) - List of favorite files/marks per project
+- [x] [harpoon2](https://github.com/ThePrimeagen/harpoon) - List of favorite files/marks per project
 - [x] [indent-blankline-nvim](https://github.com/lukas-reineke/indent-blankline.nvim) - Indent guides for Neovim
 - [x] [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) - A neovim statusline written in Lua
 - [x] [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) - Markdown preview in browser
@@ -21,7 +21,7 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 - [x] [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
 - [x] [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui) - A UI for nvim-dap
 - [ ] [nvim-dap-python](https://github.com/mfussenegger/nvim-dap-python) - Debugging support for Python
-- [ ] [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) - Virtual text for nvim-dap
+- [x] [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text) - Virtual text for nvim-dap
 - [x] [nvim-emmet](https://github.com/olrtg/nvim-emmet) - Emmet for Neovim
 - [x] [nvim-live-server](barrett-ruth/live-server.nvim) - Live reload local development servers
 - [x] [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configurations for the Nvim LSP client
@@ -47,7 +47,7 @@ Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 These plugins will probably end up in the final configuration tbh.
 
 - [ ] [mini.nvim](https://github.com/echasnovski/mini.nvim) - some potentially useful functions
-- [ ] [octo.nvim](https://github.com/pwntester/octo.nvim) - GitHub PRs and issues in Neovim
+- [x] [octo.nvim](https://github.com/pwntester/octo.nvim) - GitHub PRs and issues in Neovim
 - [ ] [barbar.nvim](https://github.com/romgrk/barbar.nvim) - alternative to `bufferline.nvim`
 - [ ] [nvim-lightbulb](https://github.com/kosayoda/nvim-lightbulb) - Show a lightbulb in the sign column when a code action is available
 - [ ] [outline.nvim](https://github.com/onsails/lspkind.nvim) - A tree-sitter based code outline
