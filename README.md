@@ -16,6 +16,7 @@ configure it.
 * [Installation](#installation)
 * [Language Support](#language-support)
     * [Python](#python)
+    * [Rust](#rust)
     * [Lua](#lua)
     * [JavaScript/TypeScript](#javascripttypescript)
 * [Included Plugins](#included-plugins)
@@ -97,6 +98,12 @@ At the moment there is support for:
 Python LSPs are setup using `pyright` for the main LSP and `ruff` for linting
 and formatting. Mypy is also used for type checking. I still have a bit to 
 tweak on this, for example formatting on save, but it is mostly working.
+
+### Rust
+
+Rust support comes from `rust-analyzer` as the main LSP which gives linting 
+and formatting. I have also added autocompletion etc including for the 
+`cargo.toml` file.
 
 ### Lua
 

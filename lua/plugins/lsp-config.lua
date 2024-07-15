@@ -36,6 +36,7 @@ return {
           "prettierd",
           "ruff",
           "mypy",
+          "codelldb",
         },
       }
 
