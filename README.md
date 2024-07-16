@@ -6,6 +6,7 @@ configure it.
 
 <!-- vim-markdown-toc GFM -->
 
+* [Installation](#installation)
 * [Setup](#setup)
     * [Common issues](#common-issues)
         * [`ripgrep` not found](#ripgrep-not-found)
@@ -13,7 +14,6 @@ configure it.
         * [Missing 'neovim' Node package](#missing-neovim-node-package)
         * [Missing Perl support](#missing-perl-support)
         * [Missing Python package](#missing-python-package)
-* [Installation](#installation)
 * [Language Support](#language-support)
     * [Python](#python)
     * [Rust](#rust)
@@ -23,6 +23,20 @@ configure it.
 * [Planned Plugins / Functionality](#planned-plugins--functionality)
 
 <!-- vim-markdown-toc -->
+
+## Installation
+
+Generally, you can clone this repository into your Neovim configuration folder.
+On Linux/Mac this is usually `~/.config/nvim`. Check the Neovim documentation
+for your specific system if you are unsure.
+
+```bash
+git clone https://github.com/seapagan/nvim-config.git ~/.config/nvim
+```
+
+> [!WARNING]
+> Be aware this will overwrite any existing configuration you have in
+> `~/.config/nvim`! You may want to back it up first.
 
 ## Setup
 
@@ -69,19 +83,7 @@ Note that it tells you to install 'neovim' package, but it is actually `pynvim`
 to install, which has replaced this. The `neovim` package will actually install 
 the `pynvim`package anyway (it's a transition package).
 
-## Installation
 
-Generally, you can clone this repository into your Neovim configuration folder.
-On Linux/Mac this is usually `~/.config/nvim`. Check the Neovim documentation
-for your specific system if you are unsure.
-
-```bash
-git clone https://github.com/seapagan/nvim-config.git ~/.config/nvim
-```
-
-> [!WARNING]
-> Be aware this will overwrite any existing configuration you have in
-> `~/.config/nvim`! You may want to back it up first.
 
 ## Language Support
 
