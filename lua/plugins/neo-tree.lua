@@ -55,8 +55,19 @@ return {
       "n",
       "<leader>ee",
       ":Neotree filesystem reveal toggle left<CR>",
-      {}
+      { silent = true, noremap = true }
     )
-    vim.keymap.set("n", "<leader>ef", ":Neotree filesystem focus left<CR>", {})
+    vim.keymap.set(
+      "n",
+      "<leader>ef",
+      ":Neotree filesystem focus left<CR>",
+      { silent = true, noremap = true }
+    )
+    vim.keymap.set(
+      "n",
+      "<leader>eg",
+      ":wincmd l<CR>",
+      { silent = true, noremap = true }
+    )
   end,
 }
