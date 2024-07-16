@@ -11,16 +11,42 @@ return {
     },
     build = "make install_jsregexp",
   },
-  { "petertriho/cmp-git",
-    config = function ()
+  {
+    "petertriho/cmp-git",
+    config = function()
       require("cmp_git").setup()
-    end
+    end,
   },
+  { "hrsh7th/cmp-cmdline" },
+  { "hrsh7th/cmp-buffer" },
   {
     "hrsh7th/nvim-cmp",
     config = function()
       local cmp = require "cmp"
       require("luasnip.loaders.from_vscode").lazy_load()
+
+      -- `/` cmdline setup.
+      cmp.setup.cmdline("/", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = {
+          { name = "buffer" },
+        },
+      })
+
+      -- `:` cmdline setup.
+      cmp.setup.cmdline(":", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = "path" },
+        }, {
+          {
+            name = "cmdline",
+            option = {
+              ignore_cmds = { "Man", "!" },
+            },
+          },
+        }),
+      })
 
       cmp.setup {
         snippet = {
@@ -42,13 +68,13 @@ return {
         },
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
-          { name = "luasnip" }, -- For luasnip users.
+          { name = "luasnip" },
         }, {
           { name = "buffer" },
           { name = "mkdnflow" },
           { name = "path" },
           { name = "crates" },
-            {name = "git"},
+          { name = "git" },
         }),
       }
     end,
