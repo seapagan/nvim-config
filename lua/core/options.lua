@@ -33,6 +33,10 @@ opt.softtabstop = 2
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- proper list item for markdown TOC
+vim.g.vmt_list_item_char = "-"
+vim.g.vmt_list_indent_text = "  "
+
 -- Different Tabs etc for Python
 vim.api.nvim_command [[autocmd FileType python set tabstop=4]]
 vim.api.nvim_command [[autocmd FileType python set shiftwidth=4]]
