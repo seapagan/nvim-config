@@ -7,7 +7,20 @@ return {
       -- telescope keymaps
       local builtin = require "telescope.builtin"
       vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
+      vim.keymap.set(
+        "n",
+        "<leader>fF",
+        "<cmd>lua require('telescope.builtin').find_files({ search_dirs = {'~/work/own'} })<CR>",
+        { noremap = true, silent = true }
+      )
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+      vim.keymap.set(
+        "n",
+        "<leader>fG",
+        "<cmd>lua require('telescope.builtin').live_grep({ search_dirs = {'~/work/own'} })<CR>",
+        { noremap = true, silent = true }
+      )
+
       vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
       vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
       vim.keymap.set(
