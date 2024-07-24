@@ -1,4 +1,11 @@
-# Planned Plugins
+# Todo List
+
+## Documentation
+
+Need to document the layout, keybindings, and plugins used in this
+configuration.
+
+## Planned Plugins
 
 This is a list of plugins that I plan to install in this `nvim` configuration.
 At this moment it is both non-exhaustive and non-definitive. I may not end up
@@ -8,7 +15,7 @@ I'll also look through [awesome-neovim](https://github.com/rockerBOO/awesome-neo
 
 Plugin control is managed by [lazy.vim](https://github.com/folke/lazy.nvim).
 
-## To Add
+### To Add
 
 - [x] [barbecue.nvim](https://github.com/utilyre/barbecue.nvim) - A VS Code like winbar for Neovim
 - [x] [bigfile.nvim](https://github.com/LunarVim/bigfile.nvim) - Make editing big files faster 🚀
