@@ -181,7 +181,7 @@ return {
       vim.keymap.set(
         "n",
         "<leader>rn",
-        '<cmd>lua vim.lsp.buf.rename()<CR>',
+        vim.lsp.buf.rename,
         { noremap = true, silent = true }
       )
     end,
