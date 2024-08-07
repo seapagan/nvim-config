@@ -61,6 +61,14 @@ return {
         on_attach = on_attach,
       }
 
+      vim.api.nvim_create_autocmd("BufWritePost", {
+        pattern = "*.py",
+        callback = function()
+          vim.fn.system("ruff format " .. vim.fn.expand "%")
+          vim.cmd "edit"
+        end,
+      })
+
       -- setup pyright for Python
       require("lspconfig").pyright.setup {
         on_attach = on_attach,
