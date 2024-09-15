@@ -11,7 +11,7 @@ return {
       require("mason-lspconfig").setup {
         ensure_installed = {
           "lua_ls",
-          "tsserver",
+          "ts_ls",
           "emmet_language_server",
           "pyright",
           "eslint",
@@ -117,7 +117,7 @@ return {
         },
       }
       -- setup javascript, typescript etc
-      lspconfig.tsserver.setup {
+      lspconfig.ts_ls.setup {
         on_attach = on_attach,
         capabilities = capabilities,
       }
